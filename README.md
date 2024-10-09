@@ -8,6 +8,11 @@ Para poder instalar la dependencia del proyecto utilizar el siguiente comando
 npm install
 ```
 
+### Diagrama NoSQL
+
+Diagrama de los modelos NoSQL
+![alt text](diagramnoSQl.png)
+
 ### Employees
 
 El modelo empleado gestiona la información de los empleados, incluyendo credenciales de acceso. Este modelo permite tener credenciales de acceso, lo cual asegura que cada empleado tenga un identificador único y una contraseña.
@@ -98,5 +103,3 @@ const Sale = mongoose.model("Sale", salesSchema);
 
 export default Sale;
 ```
-
-![alt text](image.png)
