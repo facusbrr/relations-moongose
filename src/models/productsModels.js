@@ -3,18 +3,18 @@ import mongoose from "mongoose";
 const productsSchema = new mongoose.Schema({
   nombre: {
     type: String,
-    required: true,
+    require: true,
   },
   descripcion: {
     type: String,
   },
   precio: {
     type: Number,
-    required: true,
+    require: true,
   },
   stock: {
     type: Number,
-    required: true,
+    require: true,
   },
 });
 

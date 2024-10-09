@@ -1,21 +1,23 @@
-import mongoose from "moongose";
+import mongoose from "mongoose";
 
-const employeeSchema = new mongoose.Schema({
+const productSchema = new mongoose.Schema({
   nombre: {
     type: String,
     required: true,
   },
-  correo_electronico: {
+  descripcion: {
     type: String,
-    required: true,
-    unique: true,
   },
-  contrasena: {
-    type: String,
+  precio: {
+    type: Number,
+    required: true,
+  },
+  stock: {
+    type: Number,
     required: true,
   },
 });
 
-const Employee = mongoose.model("Employee", employeeSchema);
+const Product = mongoose.model("Product", productSchema);
 
-export default Employee;
+export default Product;
